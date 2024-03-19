@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('DLS23/assets/site/Renogare-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Digi Ghaf Bold';
+	src: url('DLS23/assets/site/DigiGhafBold.woff') format('woff');
+}
+
+body {
+	background-image: url('assets/bg/23.png');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Digi Ghaf Bold';
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header {
+	font-family: 'Source Sans Pro';
+}
+
+div {
+	margin: 25px;
+}
+
+span {
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+select {
+	border: none;
+	border-radius: 2px;
+	box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+	font-size: 15px;
+	font-family: 'Open Sans';
+	margin: 2px;
+}

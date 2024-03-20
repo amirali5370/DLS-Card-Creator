@@ -73,7 +73,8 @@ function drawCard() {
         positionImage: `./assets/position/${value('position')}.png`,
         playerImage: `https://raw.githubusercontent.com/theshinramen/DLS-Files/main/playerphotos/DLS23/${value('playerID')}.png`,
         flagImage: `https://raw.githubusercontent.com/theshinramen/DLS-Files/main/flags/${value('nationality')}.png`,
-        starImage: './assets/card/maxed/star/red.png'
+        starImage: './assets/card/maxed/star/red.png',
+        coinImage: './assets/site/coin.png'
     };
 
     if (value('uploadImage') != '') {
@@ -101,7 +102,8 @@ function drawCard() {
         ctx.drawImage(images.positionImage, 202, 91);
         ctx.drawImage(images.flagImage, 202, 127, 46, 29);
         if (checked('maxed')) ctx.drawImage(images.starImage, 178, 0);
-
+        if (checked('iscoin')) ctx.drawImage(images.coinImage, 229, 275, 256, 256);
+        
         // First Name
         ctx.textAlign = 'center'
         ctx.fillStyle = checked('maxed') && value('cardType') == 'legendary' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.5)';

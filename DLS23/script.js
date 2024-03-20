@@ -60,6 +60,7 @@ function loadImages(sources, callback) {
 };
 
 function clearCard() {
+    priceStr = "";
     var card = document.getElementById('card');
     var ctx = card.getContext('2d');
     ctx.clearRect(0, 0, card.width, card.height);

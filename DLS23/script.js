@@ -102,7 +102,7 @@ function drawCard() {
         ctx.drawImage(images.positionImage, 202, 91);
         ctx.drawImage(images.flagImage, 202, 127, 46, 29);
         if (checked('maxed')) ctx.drawImage(images.starImage, 178, 0);
-        if (checked('iscoin')) ctx.drawImage(images.coinImage, 229, 275, 256, 256);
+        if (checked('iscoin')) ctx.drawImage(images.coinImage, 229, 275, 31, 31);
         
         // First Name
         ctx.textAlign = 'center'
@@ -162,12 +162,15 @@ function drawCard() {
             ctx.fill();
         }
 
+        
         // Price
-        ctx.fillStyle = '#000000';
-        ctx.font = boldText + '27px Renogare';
-        ctx.letterSpacing = '46%';
-        ctx.fillText(value('price'), 375, 304);
-
+        if (checked('iscoin') {
+            ctx.fillStyle = '#000000';
+            ctx.font = boldText + '27px Renogare';
+            ctx.letterSpacing = '46%';
+            ctx.fillText(value('price'), 375, 304);
+        }
+        
         // Rating
         ctx.fillStyle = '#ffffff';
         ctx.font = boldText + '28px Renogare';

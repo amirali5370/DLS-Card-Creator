@@ -164,7 +164,7 @@ function drawCard() {
 
         
         // Price
-        if (checked('iscoin') {
+        if (checked('iscoin')) {
             ctx.fillStyle = '#000000';
             ctx.font = boldText + '27px Renogare';
             ctx.letterSpacing = '46%';

@@ -160,6 +160,12 @@ function drawCard() {
             ctx.fill();
         }
 
+        // Price
+        ctx.fillStyle = '#000000';
+        ctx.font = boldText + '27px Renogare';
+        ctx.letterSpacing = '46%';
+        ctx.fillText(value('price'), 375, 304);
+
         // Rating
         ctx.fillStyle = '#ffffff';
         ctx.font = boldText + '28px Renogare';

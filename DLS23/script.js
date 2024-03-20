@@ -105,7 +105,7 @@ function drawCard() {
         ctx.drawImage(images.positionImage, 202, 91);
         ctx.drawImage(images.flagImage, 202, 127, 46, 29);
         if (checked('maxed')) ctx.drawImage(images.starImage, 178, 0);
-        if (checked('iscoin')) ctx.drawImage(images.coinImage, 275, 229, 31, 31);
+        if (checked('iscoin')) ctx.drawImage(images.coinImage, 299, 275, 31, 31);
         
         // First Name
         ctx.textAlign = 'center'

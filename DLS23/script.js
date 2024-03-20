@@ -108,7 +108,7 @@ function drawCard() {
         if (checked('maxed')) ctx.drawImage(images.starImage, 178, 0);
         if (checked('iscoin')) {
             priceStr = "";
-            ctx.drawImage(images.coinImage, 299, 5000, 31, 31);
+            ctx.drawImage(images.coinImage, 299, 275, 31, 31);
         }
         
         // First Name

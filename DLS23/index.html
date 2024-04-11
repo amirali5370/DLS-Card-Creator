@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta name="google-adsense-account" content="ca-pub-1435193529196881">
@@ -21,8 +21,8 @@
     <div>
         <canvas id="card" width="458" height="320"></canvas>
     </div>
-    <div>
-        <p>Version
+    <div dir="ltr">
+        <p>version : 
             <select id="version" onchange="window.location.assign(`/DLS-Card-Creator/${value}`);">
                 <option value="DLS19">
                     DLS 19
@@ -43,11 +43,11 @@
         </p>
     </div>
     <div id="settings">
-        <p>نام بازیکن
-            <input id="firstName" type="text" value="ERLING">
-            <input id="lastName" type="text" value="HAALAND">
+        <p>نام بازیکن:
+            <input id="lastName" type="text" value="HAALAND" dir="ltr">
+            <input id="firstName" type="text" value="ERLING" dir="ltr">
         </p>
-        <p>پای تخصصی
+        <p>نوع کارت:
             <select id="cardType">
                 <option selected value="legendary">
                     Legendary
@@ -59,11 +59,11 @@
                     Common
                 </option>
             </select>
-            نوع کارت
+            مکس شده:
             <input id="maxed" type="checkbox" onchange="clearCard();">
-            مکس شده
+            قد:
             <input id="height" max="999" min="1" type="number" value="195">
-            قد
+            پای تخصصی:
             <select id="foot">
                 <option value="R">
                     <strong>راست</strong>
@@ -77,10 +77,9 @@
             </select>
         </p>
         <p>
-            ملیت <a href="https://drive.google.com/file/d/1nxdgrei7wZihm9NNkrjyjTdpmxr815g8/view?usp=sharing"
-                target="_blank"><sup>(?)</sup></a>
+           امتیاز کلی:
             <input id="rating" max="100" min="1" type="number" value="86">
-            امتیاز کلی
+            پست:
             <select id="position">
                 <option selected value="CF">
                     CF
@@ -122,11 +121,12 @@
                     GK
                 </option>
             </select>
-            پست
+            ملیت:<a href="https://drive.google.com/file/d/1nxdgrei7wZihm9NNkrjyjTdpmxr815g8/view?usp=sharing"
+            target="_blank"><sup>(?)</sup></a>
             <select id="nationality"></select>
         </p>
         <p>
-            آمار
+            آمار:
             <input id="stats1" max="100" min="1" type="number" value="90">
             <input id="stats2" max="100" min="1" type="number" value="83">
             <input id="stats3" max="100" min="1" type="number" value="79">
@@ -137,12 +137,12 @@
             <input id="stats8" max="100" min="1" type="number" value="94">
         </p>
         <p>
-            در نقل انتقالات
+            قیمت:
             <input id="price" max="9999" min="1" type="number" value="2675">
-            قیمت
+            در نقل و انتقالات:
             <input id="iscoin" type="checkbox" onchange="clearCard();">
         </p>
-        <p>عکس بازیکن <a href="https://drive.google.com/file/d/1bb8MxNXX34vN5-QczUtQYwfj7hYYG274/view?usp=sharing"
+        <p>عکس بازیکن: <a href="https://drive.google.com/file/d/1bb8MxNXX34vN5-QczUtQYwfj7hYYG274/view?usp=sharing"
                 target="_blank"><sup>(?)</sup></a>
             <select id="playerID"></select>
             <input accept="image/gif, image/jpeg, image/png" type="file" id="uploadImage" />
